@@ -32,3 +32,9 @@ driver.get(url)
 neue = driver.find_element_by_class_name('tablewrapper')
 
 print(neue.text)
+
+#was nicht funktioniert - zwar keine Fehlermeldung, aber Daten werden wohl nicht vollständig geladen
+page = requests.get(url)
+soup = BeautifulSoup(page.content, 'html.parser')
+print(soup)
+
