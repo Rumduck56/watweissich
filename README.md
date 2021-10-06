@@ -7,7 +7,9 @@ auf der Webseite auszulesen), könnte ich auch deine Tipps, etc. auszulesen..sch
 Aber 
 
 page = requests.get(url)
+
 soup = BeautifulSoup(page.content, 'html.parser')
+
 print(soup)
 
 funktioniert nicht, da zwar Daten ausgegeben werden, aber nicht alle (wenn ich zum Beispiel eingeloggt bin und dann auf 'inspect" gehe, mir also den Quellcode ansehe)
